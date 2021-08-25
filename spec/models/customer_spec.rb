@@ -16,7 +16,7 @@ RSpec.describe Customer, type: :model do
     expect(customer.vip).to eql(true)
   end
 
-  it 'be a vip' do
+  it 'not a vip' do
     customer = create(:customer_default)
     expect(customer.vip).to eql(false)
   end
